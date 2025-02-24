@@ -19,7 +19,7 @@ def main() -> None:
 
     session.cookies = {
         'cf_clearance': "hvenv3mkYoDzRBCE_kdXV6Zf_RbmtXh7DJgcKSSSKDc-1740421507-1.2.1.1-etAQTFwJJhc1Yn4ZyVuIdEYPjmTuOUvOyKC5l_IPNo6DaCMAL5CbcywEan_Ssy.GFBtI1jeVe.v6xpLSvTNnWUACyQBjyrr30wv.sgsmNJMoXHRKicUOrEikzbAwCbHFXmMt2gx7mzdCnj9yKaXX0v_WI44xNR8zoRgc8WN8yPUTRznCN4w1.l1L8xDCN.WTK4Dz0D2ZN2mXLvTesterVpgh2odCe0o1lzAeQ07pOxpn8gYjQAGaEh2jcRAa2X0IfqWaLvoUVan1owixzLbc16AsrzFn2HteEEtyHufJ2GLFz0Q7yVTpcnflcSifDOsISMKOxI5KYLOazXPqkbzJIQ",
-    }
+    } # dont look at me... (replace if "Just a moment..")
 
     session.headers = {
         'accept': 'text/x-component',

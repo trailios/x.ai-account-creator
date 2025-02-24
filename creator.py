@@ -7,7 +7,7 @@ mail = Fetch()
 log = Log()
 
 def get_token(params: dict[str, str]) -> str:
-    resp: requests.Response = requests.get('http://127.0.0.1:5000/turnstile', params=params)
+    resp: requests.Response = requests.get('http://127.0.0.1:5000/turnstile', params=params) # https://github.com/sexfrance/Turnstile-Solver
     return resp.json()["result"]
 
 def main() -> None:

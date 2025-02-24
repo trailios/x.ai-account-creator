@@ -1,2 +1,5 @@
 # x.ai-account-creator
-lol
+
+Bored: True
+
+Useful: Idk

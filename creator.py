@@ -52,7 +52,7 @@ def main() -> None:
 
     log.Info(f"Email: {email}")
 
-    data: str = f'[{{"createUserAndSessionRequest":{{"email":"{email}","givenName":"traili","familyName":"cowyak","clearTextPassword":"1122qqww**?A","tosAcceptedVersion":true}},"redirectLocation":"$undefined","turnstileToken":"{turnstile_token}"}}]'
+    data: str = f'[{{"createUserAndSessionRequest":{{"email":"{email}","givenName":"traili","familyName":"cowyak","clearTextPassword":"12qw12qw**?A","tosAcceptedVersion":true}},"redirectLocation":"$undefined","turnstileToken":"{turnstile_token}"}}]'
 
     response: requests.Response = session.post(
         'https://accounts.x.ai/sign-up', data=data, impersonate="chrome"

@@ -1,3 +1,4 @@
+from multiprocessing import Process
 from typing     import List, Dict
 from curl_cffi  import requests
 from temp_mail  import TempMail
@@ -21,7 +22,7 @@ def get_token(params: Dict[str, str]) -> str:
     """
     try:
         resp: requests.Response = requests.get(
-            "http://127.0.0.1:5000/turnstile", 
+            "http://127.0.0.1:5000/turnstile", # https://github.com/Theyka/Turnstile-Solver should work
             params=params
         )
         return resp.json()["result"]
@@ -125,10 +126,20 @@ def main() -> None:
 
 def threads():
     threads: List[Thread] = []
-    for i in range(20):
+    for i in range(5):
         t = Thread(target=main)
         t.start()
         threads.append(t)
 
     for t in threads:
         t.join()
+
+if __name__ == "__main__":
+    procceses: List[Process] = []
+    for i in range(5):
+        p = Process(target=threads)
+        p.start()
+        procceses.append(p)
+
+    for p in procceses:
+        p.join()

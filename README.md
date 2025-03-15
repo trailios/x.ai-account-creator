@@ -1,5 +1,1 @@
-# x.ai-account-creator
-
-Bored: True
-
-Useful: Idk
+How tf do i use this again?

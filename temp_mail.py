@@ -20,7 +20,7 @@ class TempMail:
 
         self.session: requests.Session = requests.Session()
         
-        proxy: str | None = f"f8557a116722e9501283-package-resi-session-{random.randint(1,999999)}:2fae8f594c99c6fdff37@adam.flashproxy.io:8080"
+        proxy: str | None = None # Using proxy, is recommended
 
         if proxy:
             self.session.proxies = {"all": "http://" + proxy}

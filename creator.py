@@ -1,9 +1,9 @@
 from multiprocessing import Process
-from typing     import List, Dict
-from curl_cffi  import requests
-from temp_mail  import TempMail
-from threading  import Thread
-from Log        import Log
+from typing          import List, Dict
+from curl_cffi       import requests
+from temp_mail       import TempMail
+from threading       import Thread
+from Log             import Log
 
 import os
 
